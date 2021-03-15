@@ -10,3 +10,6 @@ e esconder a chave de criptografia, respectivamente. [Commit f8150f9](https://gi
 
 #### v2.
 Troca do método de chave + variáveis para criptografia por hashing e identificação por comparação do hash, utilizando a extensão no node.js, md5. [Commit 89b96ae](https://github.com/Andre-Gabos/cryptography-study/commit/89b96ae464cf3eea02aa04daf7cfd6e87520a7f1)
+
+#### v3.
+Nesta versão foi aplicado o método de salting + hashing. O modulo utilizado para o hashing foi trocado, do md5 para o BCrypt, com o objetivo de complexificar o hash e com isso aumentar a segurança. O BCrypt também inclui a função de salting, que foi aplicada em 10 rodadas para esse teste. [Commit 0bcd5bd](https://github.com/Andre-Gabos/cryptography-study/commit/0bcd5bd6d495b0c6cc7f06c72447cf74887406e8)
