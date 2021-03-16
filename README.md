@@ -13,3 +13,6 @@ Troca do método de chave + variáveis para criptografia por hashing e identific
 
 #### v3.
 Nesta versão foi aplicado o método de salting + hashing. O modulo utilizado para o hashing foi trocado, do md5 para o BCrypt, com o objetivo de complexificar o hash e com isso aumentar a segurança. O BCrypt também inclui a função de salting, que foi aplicada em 10 rodadas para esse teste. [Commit 0bcd5bd](https://github.com/Andre-Gabos/cryptography-study/commit/0bcd5bd6d495b0c6cc7f06c72447cf74887406e8)
+
+### v4.
+Essa versão inclui a aplicação dos métodos anteriores em conjunto e a adição de cookies, com a utilização do Passport e Express-session. String chave, salting e hashing são executados por esse módulos, e a integração à database (MongoDB), para criptografar as senhas guardadas e autenticação, é feita a partir do módulo Passport-local-mongoose. Nessa aplicação, com a introdução dos cookies, é possível manter o login autenticado e a página /secrets acessível até que o navegador seja fechado. [Commit 080c3d5](https://github.com/Andre-Gabos/cryptography-study/commit/080c3d544482528de987a79cc15f72f801a846e4)
