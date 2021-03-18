@@ -3,6 +3,8 @@ Estudo de níveis de criptografia a partir de um site com as funções de regist
 
 A intenção é de aplicar diferentes ferramentas para desenvolver a criptografia e segurança do site, desde o uso de uma string como chave até formas mais complexas.
 
+Um link para o commit com as mudanças referentes as vesões está disponível após suas descrições.
+
 ### Versões
 #### v1.
 Criptografia construída a partir do uso de uma string chave (usando mongoose-encryption) e environment variables (usando dotenv), para criptografar a senha do usuário
